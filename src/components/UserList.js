@@ -1,16 +1,18 @@
 import React, { Component } from 'react'
 
-// const alist = ['Rambo','Rambo2','Rambo3'];
-
 class UserList extends Component {
     
     render() {
-        const alist = ['Rambo','Rambo2','Rambo3'];
+        const alist = [
+            {name: "Bruce Wayne",id: 83827,age: 35,},
+            {name: "Diana Prince",id:88888,age:150},
+            {name: "Clark Kent",id: 9999,age:29},
+
+        ];
+        const namelist = alist.map(alist => <h1> I am {alist.name} and my age is {alist.age} </h1>)
         return (
             <div>
-                <h1>{alist[0]}</h1>
-                <h1>{alist[1]}</h1>
-                <h1>{alist[2]}</h1>
+               {namelist}
             </div>
         )
     }
