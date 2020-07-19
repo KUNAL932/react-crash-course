@@ -9,11 +9,13 @@ import Addition from "./components/Addition";
 import FunctionClick from "./components/FunctionClick";
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
+import UserList from './components/UserList';
 class App extends Component{
   render() {
     return (
       <div className="App">
-        <UserGreetings></UserGreetings>
+        <UserList/>
+        {/* <UserGreetings></UserGreetings> */}
       {/* <h1> Hello kunal </h1> */}
       {/* <Greet/>
       <Welcome/>
