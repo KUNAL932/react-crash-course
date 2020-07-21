@@ -10,11 +10,14 @@ import FunctionClick from "./components/FunctionClick";
 import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import UserList from './components/UserList';
+import ListManupulation from './components/ListManupulation';
 class App extends Component{
   render() {
+    // const numbers = [1,2,3,4,5]
     return (
       <div className="App">
-        <UserList/>
+        {/* <UserList/> */}
+        <ListManupulation numbers= {[1,2,3,4,5]} />
         {/* <UserGreetings></UserGreetings> */}
       {/* <h1> Hello kunal </h1> */}
       {/* <Greet/>
