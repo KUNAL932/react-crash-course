@@ -12,14 +12,20 @@ import UserGreetings from './components/UserGreetings';
 import UserList from './components/UserList';
 import ListManupulation from './components/ListManupulation';
 import NumberList from './ListComponent/NumberList';
+import SiblingKey from './ListComponent/SiblingKey';
 class App extends Component{
   render() {
     const numbers= [1,2,3,4,5];
+    const posts = [
+      {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+      {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+    ];
     return (
      
       <div className="App">
         {/* <UserList/> */}
-        <NumberList numbers={numbers}/>
+        {/* <NumberList numbers={numbers}/> */}
+        <SiblingKey posts= {posts} />
         {/* <ListManupulation numbers= {numbers} /> */}
         {/* <UserGreetings></UserGreetings> */}
       {/* <h1> Hello kunal </h1> */}
