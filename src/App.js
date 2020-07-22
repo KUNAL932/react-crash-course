@@ -11,13 +11,16 @@ import ParentComponent from './components/ParentComponent';
 import UserGreetings from './components/UserGreetings';
 import UserList from './components/UserList';
 import ListManupulation from './components/ListManupulation';
+import NumberList from './ListComponent/NumberList';
 class App extends Component{
   render() {
-    // const numbers = [1,2,3,4,5]
+    const numbers= [1,2,3,4,5];
     return (
+     
       <div className="App">
         {/* <UserList/> */}
-        <ListManupulation numbers= {[1,2,3,4,5]} />
+        <NumberList numbers={numbers}/>
+        {/* <ListManupulation numbers= {numbers} /> */}
         {/* <UserGreetings></UserGreetings> */}
       {/* <h1> Hello kunal </h1> */}
       {/* <Greet/>
