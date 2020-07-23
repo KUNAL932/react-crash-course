@@ -14,6 +14,7 @@ import ListManupulation from './components/ListManupulation';
 import NumberList from './ListComponent/NumberList';
 import SiblingKey from './ListComponent/SiblingKey';
 import NameForm from './Forms/NameForm';
+import NameFormExtended from './Forms/NameFormExtended';
 class App extends Component{
   render() {
     const numbers= [1,2,3,4,5];
@@ -27,7 +28,8 @@ class App extends Component{
         {/* <UserList/> */}
         {/* <NumberList numbers={numbers}/> */}
         <SiblingKey posts= {posts} />
-        <NameForm/>
+        <NameFormExtended />
+        {/* <NameForm/> */}
         {/* <ListManupulation numbers= {numbers} /> */}
         {/* <UserGreetings></UserGreetings> */}
       {/* <h1> Hello kunal </h1> */}
