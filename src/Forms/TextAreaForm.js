@@ -25,7 +25,7 @@ class TextAreaForm extends Component {
                 <form onSubmit={this.submitHandling}>
                     <label>
                     Enter Your skills:
-                    <textarea text={this.state.text} onChange={this.inputHandling} />   
+                    <textarea value={this.state.text} onChange={this.inputHandling} />   
                     </label>
                     <input type = "submit" name="submit" />
                 </form>
