@@ -15,6 +15,7 @@ import NumberList from './ListComponent/NumberList';
 import SiblingKey from './ListComponent/SiblingKey';
 import NameForm from './Forms/NameForm';
 import NameFormExtended from './Forms/NameFormExtended';
+import TextAreaForm from './Forms/TextAreaForm';
 class App extends Component{
   render() {
     const numbers= [1,2,3,4,5];
@@ -25,10 +26,11 @@ class App extends Component{
     return (
      
       <div className="App">
+        <TextAreaForm/>
         {/* <UserList/> */}
         {/* <NumberList numbers={numbers}/> */}
-        <SiblingKey posts= {posts} />
-        <NameFormExtended />
+        {/* <SiblingKey posts= {posts} /> */}
+        {/* <NameFormExtended /> */}
         {/* <NameForm/> */}
         {/* <ListManupulation numbers= {numbers} /> */}
         {/* <UserGreetings></UserGreetings> */}
